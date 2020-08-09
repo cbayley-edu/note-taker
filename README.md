@@ -6,7 +6,9 @@
 
 Use the Note Taker application to create, save, and delete your personal notes all on one website.
 
-Access the deployed Heroku app here: 
+Access the deployed Heroku app here: https://quiet-garden-01177.herokuapp.com/
+
+Access the git repo here: https://github.com/cbayley-edu/note-taker 
 
 
 ## Table of Contents 
