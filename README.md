@@ -1,80 +1,92 @@
-# Unit 11 Express Homework: Note Taker
+# Personal Note Taker
+
+### Unit 11 Express Homework: Note Taker
 
 ## Description
 
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+Use the Note Taker application to create, save, and delete your personal notes all on one website.
 
-* The application frontend has already been created, it's your job to build the backend and connect the two.
+Access the deployed Heroku app here: 
 
-* The following HTML routes should be created:
 
-  * GET `/notes` - Should return the `notes.html` file.
+## Table of Contents 
 
-  * GET `*` - Should return the `index.html` file
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Questions](#questions)
 
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
 
-* The following API routes should be created:
+## Installation 
 
-  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
+You can immediately access the app using the link above but you can also run the application locally.
 
-  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+Using GitHub, clone or fork the repository. You'll need to get the repo pulled to your local repository. Once you have the repo locally, be sure to run npm install from your terminal to install inquirer and all other dependencies for the application. 
 
-  * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+![npm install](./public/assets/imgs/npm-install.png) 
 
-## User Story
+If you plan to push the repo back to your GitHub repo, be sure to add a .gitignore file to your root folder and ignore node_modules and .DS_Store/ . 
 
-AS A user, I want to be able to write and save notes
 
-I WANT to be able to delete notes I've written before
+## Usage
 
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+#### You only need to follow these first steps if you are running the application locally.
 
-## Business Context
+Start the program by typing node server.js in your terminal. You will be prompted that port 3060 is listening.
 
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
+![start program](./public/assets/imgs/start-program.png)
 
-## Acceptance Criteria
+Open your browser and goto localhost:3060 .
 
-Application should allow users to create and save notes.
+![browser](./public/assets/imgs/browser.png)
 
-Application should allow users to view previously saved notes.
 
-Application should allow users to delete previously saved notes.
+#### The remaining steps refer to the app regardless of how you access it (locally or through Heroku)
 
-## Deploying the App
+You will be presented with the Note Taker start page. Click Get Started to use Note Taker.
 
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Supplemental/HerokuGuide.md) for getting your app deployed on Heroku.
+![get started](./public/assets/imgs/get-started.png)
 
-- - -
+To enter a new note, type a note title and note text.
 
-## Commit Early and Often
+![enter note](./public/assets/imgs/enter-note.png)
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+To save your note, click on the Save button.
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+![save note](./public/assets/imgs/save-note.png)
 
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+As you save notes the will appear on the left. 
 
-Follow these guidelines for committing:
+![view notes](./public/assets/imgs/view-notes.png)
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+Click on any note to view it.
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+![view note](./public/assets/imgs/view-note.png)
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+While in view mode, if you wish to add a new note, click on the pencil icon in the upper right-hand corner.
 
-* Test your application before you commit to ensure functionality at every step in the development process.
+![new note](./public/assets/imgs/new-note.png)
 
-We would like you to have well over 200 commits by graduation, so commit early and often!
+Click on the trashcan to delete an existing note.
 
-## Submission on BCS
+![delete note](./public/assets/imgs/delete-note.png)
 
-You are required to submit the following:
+The page will reload and the note will be gone.
 
-* The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
+![delete refresh](./public/assets/imgs/delete-refresh.png)
 
-* The URL of the GitHub repository
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+## License 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is covered by the above license(s). Click on the badge for more information.
+
+
+## Questions 
+
+GitHub username: cbayley-edu
+GitHub profile link: https://github.com/cbayley-edu
+
+Please email me at christinabayley@comcast.net with any questions you have or any issues you come across.
+
